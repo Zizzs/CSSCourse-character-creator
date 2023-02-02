@@ -8,6 +8,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +25,39 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 13%;
+  left: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .controlColumn {
+  width: 50%;
 }
+
+.perspectiveBar {
+  position: fixed;
+  bottom: 0;
+  background-color: hsl(195deg, 20%, 86%);
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 780px) {
+  .characterWrapper {
+    left: 0%;
+  }
+
+  .controlColumn {
+    display: flex; 
+    width: 80%;
+    overflow-x: scroll;
+  }
+
+  .header {
+    visibility: hidden;
+  }
+}
+
+
